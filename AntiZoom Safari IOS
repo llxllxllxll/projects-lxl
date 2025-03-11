@@ -1,1 +1,16 @@
-Anti-Zoom script for Safari browser Iphone IOS
+// ==UserScript==
+// @name         Anti-Zoom Script
+// @namespace    https://staybrowser.com/
+// @version      0.1
+// @description  Blocks zoom on input fields in Safari
+// @author       You
+// @match        *://*/*
+// @grant        none
+// ==/UserScript==
+(function() {
+    'use strict';
+    let meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    document.head.appendChild(meta);
+})();
